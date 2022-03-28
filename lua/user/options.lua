@@ -1,5 +1,4 @@
 local opt = vim.opt
-opt.laststatus=3
 opt.smartcase = true
 opt.smartindent = true
 opt.termguicolors = true
@@ -21,3 +20,4 @@ opt.sidescrolloff = 8
 -- opt.cursorline = true
 opt.signcolumn = "yes"
 vim.cmd [[filetype plugin indent on]]
+vim.cmd [[set laststatus=3]]

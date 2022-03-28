@@ -17,3 +17,5 @@ require 'user.telescope'
 require 'user.nvim-tree'
 require 'user.autocmd'
 require 'user.gitsigns'
+
+opt.laststatus=3

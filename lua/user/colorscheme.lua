@@ -1,7 +1,9 @@
-vim.g.tokyonight_transparent = true
-vim.g.tokyonight_italic_keywords = false
-vim.g.tokyonight_style = "night"
-vim.cmd [[colorscheme moonlight]]
+vim.g.moonlight_contrast = false
+vim.g.moonlight_italic_comments = false
+vim.g.moonlight_italic_keywords = false
+vim.g.moonlight_italic_functions = true
+vim.g.moonlight_italic_variables = false
+require('moonlight').set()
 vim.cmd [[hi clear CursorLine]]
 vim.cmd [[hi CursorLine gui=underline cterm=underline]]
 
