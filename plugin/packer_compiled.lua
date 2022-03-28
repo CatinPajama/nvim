@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/material.nvim",
     url = "https://github.com/marko-cerovac/material.nvim"
   },
+  ["moonlight.nvim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/moonlight.nvim",
+    url = "https://github.com/shaunsingh/moonlight.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -155,6 +160,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-colorizer.lua"] = {
+    config = { "\27LJ\2\nG\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\3\0\0\blua\bcss\nsetup\14colorizer\frequire\0" },
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
@@ -163,12 +169,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-spotify"] = {
-    config = { "\27LJ\2\2y\0\0\4\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\1\2\0005\2\4\0005\3\3\0=\3\5\2B\1\2\1K\0\1\0\vstatus\1\0\0\1\0\2\20update_interval\3êN\vformat\16%s %t by %a\nsetup\17nvim-spotify\frequire\0" },
-    loaded = true,
-    path = "/home/bob/.local/share/nvim/site/pack/packer/start/nvim-spotify",
-    url = "https://github.com/KadoBOT/nvim-spotify"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -210,11 +210,6 @@ _G.packer_plugins = {
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
   },
-  ["solarized.nvim"] = {
-    loaded = true,
-    path = "/home/bob/.local/share/nvim/site/pack/packer/start/solarized.nvim",
-    url = "https://github.com/shaunsingh/solarized.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -238,10 +233,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-spotify
-time([[Config for nvim-spotify]], true)
-try_loadstring("\27LJ\2\2y\0\0\4\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\1\2\0005\2\4\0005\3\3\0=\3\5\2B\1\2\1K\0\1\0\vstatus\1\0\0\1\0\2\20update_interval\3êN\vformat\16%s %t by %a\nsetup\17nvim-spotify\frequire\0", "config", "nvim-spotify")
-time([[Config for nvim-spotify]], false)
+-- Config for: nvim-colorizer.lua
+time([[Config for nvim-colorizer.lua]], true)
+try_loadstring("\27LJ\2\nG\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\3\0\0\blua\bcss\nsetup\14colorizer\frequire\0", "config", "nvim-colorizer.lua")
+time([[Config for nvim-colorizer.lua]], false)
 if should_profile then save_profiles() end
 
 end)

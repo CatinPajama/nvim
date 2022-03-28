@@ -86,12 +86,13 @@ return packer.startup(function(use)
         as = "catppuccin"
     })
     use 'martinsione/darkplus.nvim'
+    use 'shaunsingh/moonlight.nvim'
+
     use 'marko-cerovac/material.nvim'
     use 'navarasu/onedark.nvim'
     use "rebelot/kanagawa.nvim"
 
     use 'Mofiqul/vscode.nvim'
-    use 'shaunsingh/solarized.nvim'
 
 
 	if packer_boostrap then

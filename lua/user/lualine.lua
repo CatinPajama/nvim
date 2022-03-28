@@ -72,7 +72,7 @@ local colors = {
 --custom_vscode.visual.a.bg = "#5D4D7A"
 --custom_vscode.insert.a.bg = "#5D4D7A"
 require('lualine').setup({
-    theme = "tokyonight",section_separators = '', component_separators = '',extensions = {'nvim-tree'}
+    theme = "solarized",section_separators = '', component_separators = '',extensions = {'nvim-tree'}
 })
 
 
@@ -97,6 +97,7 @@ require('lualine').setup {
             function()
                 return '█'
             end,
+            --[[
             color = function()
                 --[[
                 local mode_color = {
@@ -104,10 +105,9 @@ require('lualine').setup {
                     i = "#F5044E",
                     v = "#703AE6"
                 }
-                --]]
                 local mode_color = {
                     n = colors.ui_purple,
-                    i = colors.orange,
+                    i = colors.light_green,
                     v = colors.blue,
                     [''] = colors.blue,
                     V = colors.blue,
@@ -129,6 +129,7 @@ require('lualine').setup {
                 }
                 return {fg = mode_color[vim.fn.mode()],bg="#5D4D7A"}
             end,
+            --]]
             padding = { left = 0, right = 0}
         }
     },

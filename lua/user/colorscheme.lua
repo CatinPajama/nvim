@@ -1,17 +1,7 @@
-require('vscode').change_style("dark")
-vim.cmd [[colorscheme darkplus]]
+vim.g.tokyonight_transparent = true
+vim.g.tokyonight_italic_keywords = false
+vim.g.tokyonight_style = "night"
+vim.cmd [[colorscheme moonlight]]
 vim.cmd [[hi clear CursorLine]]
 vim.cmd [[hi CursorLine gui=underline cterm=underline]]
---[[vim.g.termguicolors=true
-require('doom-one').setup{
-    cursor_coloring = true,
-    plugins_integrations = {
-        bufferline = true,
-        telescope = true,
-        nvim_tree = true,
-        indent_blankline = true,
 
-    }
-}
-vim.cmd [[colorscheme doom-one]]
---]]
