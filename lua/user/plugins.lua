@@ -25,7 +25,8 @@ return packer.startup(function(use)
 
 	use 'wbthomason/packer.nvim'
 	use 'folke/tokyonight.nvim'
-
+    
+    use 'p00f/nvim-ts-rainbow'
 	use 'windwp/nvim-autopairs'
     use {
         'norcalli/nvim-colorizer.lua',
@@ -55,7 +56,8 @@ return packer.startup(function(use)
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-  
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+ 
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
@@ -68,6 +70,7 @@ return packer.startup(function(use)
     use 'jonstoler/lua-snip'
 
     use 'ahmedkhalf/project.nvim'
+    use "Pocco81/TrueZen.nvim"
     use {
         'lewis6991/gitsigns.nvim',
         requires = {
@@ -85,7 +88,17 @@ return packer.startup(function(use)
         "catppuccin/nvim",
         as = "catppuccin"
     })
+    use({
+        'embark-theme/vim',
+        as = 'embark'
+    })
+    use 'NTBBloodbath/doom-one.nvim'
     use 'martinsione/darkplus.nvim'
+    use 'yashguptaz/calvera-dark.nvim'
+
+    use 'rose-pine/neovim'
+    use 'shaunsingh/nord.nvim'
+    use 'yonlu/omni.vim'
     use 'shaunsingh/moonlight.nvim'
 
     use 'marko-cerovac/material.nvim'

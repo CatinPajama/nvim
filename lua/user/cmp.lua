@@ -70,17 +70,17 @@ local on_attach = function(client, bufnr)
 end
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 local signs = {
-    Error = "" ,
-    Warn = "" ,
-    Hint = "" ,
-    Info = "" ,
+    Error = " " ,
+    Warn = " " ,
+    Hint = " " ,
+    Info = " " ,
 }
 
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
-local servers = {'tsserver','clangd'}
+local servers = {'tsserver','clangd','cssls'}
 
 for _, lsp in pairs(servers) do 
     require('lspconfig')[lsp].setup{

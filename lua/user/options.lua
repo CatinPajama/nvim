@@ -15,9 +15,9 @@ opt.relativenumber = true
 opt.wrap = false
 opt.undofile = false
 opt.writebackup = false
-opt.scrolloff = 8
+opt.scrolloff = 10
+opt.hidden = true
 opt.sidescrolloff = 8
 -- opt.cursorline = true
-opt.signcolumn = "yes"
 vim.cmd [[filetype plugin indent on]]
 vim.cmd [[set laststatus=3]]

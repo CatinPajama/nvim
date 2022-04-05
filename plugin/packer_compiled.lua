@@ -74,10 +74,20 @@ _G.packer_plugins = {
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["TrueZen.nvim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/TrueZen.nvim",
+    url = "https://github.com/Pocco81/TrueZen.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["calvera-dark.nvim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/calvera-dark.nvim",
+    url = "https://github.com/yashguptaz/calvera-dark.nvim"
   },
   catppuccin = {
     loaded = true,
@@ -114,6 +124,16 @@ _G.packer_plugins = {
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/martinsione/darkplus.nvim"
   },
+  ["doom-one.nvim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/doom-one.nvim",
+    url = "https://github.com/NTBBloodbath/doom-one.nvim"
+  },
+  embark = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/embark",
+    url = "https://github.com/embark-theme/vim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -149,6 +169,16 @@ _G.packer_plugins = {
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/moonlight.nvim",
     url = "https://github.com/shaunsingh/moonlight.nvim"
   },
+  neovim = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
+  },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -180,10 +210,20 @@ _G.packer_plugins = {
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
+    url = "https://github.com/p00f/nvim-ts-rainbow"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["omni.vim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/omni.vim",
+    url = "https://github.com/yonlu/omni.vim"
   },
   ["onedark.nvim"] = {
     loaded = true,
@@ -209,6 +249,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
