@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["cpbooster.vim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/cpbooster.vim",
+    url = "https://github.com/searleser97/cpbooster.vim"
+  },
   ["darkplus.nvim"] = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
@@ -138,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bob/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/bob/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,

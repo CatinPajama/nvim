@@ -93,6 +93,8 @@ return packer.startup(function(use)
         as = 'embark'
     })
     use 'NTBBloodbath/doom-one.nvim'
+    use { "ellisonleao/gruvbox.nvim" }
+
     use 'martinsione/darkplus.nvim'
     use 'yashguptaz/calvera-dark.nvim'
 
@@ -106,7 +108,7 @@ return packer.startup(function(use)
     use "rebelot/kanagawa.nvim"
 
     use 'Mofiqul/vscode.nvim'
-
+    use 'searleser97/cpbooster.vim'
 
 	if packer_boostrap then
 		require('packer').sync()
