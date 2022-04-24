@@ -18,5 +18,5 @@ require 'user.nvim-tree'
 require 'user.autocmd'
 require 'user.gitsigns'
 require 'user.truezen'
-
-opt.laststatus=3
+require 'user.comment'
+require 'user.alpha'

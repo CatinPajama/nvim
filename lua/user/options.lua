@@ -19,5 +19,5 @@ opt.scrolloff = 10
 opt.hidden = true
 opt.sidescrolloff = 8
 -- opt.cursorline = true
+opt.laststatus=3
 vim.cmd [[filetype plugin indent on]]
-vim.cmd [[set laststatus=3]]

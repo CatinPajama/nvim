@@ -24,7 +24,6 @@ packer.init {
 return packer.startup(function(use)
 
 	use 'wbthomason/packer.nvim'
-	use 'folke/tokyonight.nvim'
     
     use 'p00f/nvim-ts-rainbow'
 	use 'windwp/nvim-autopairs'
@@ -41,11 +40,13 @@ return packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    use {
+        'goolord/alpha-nvim',
+        config = function ()
+            require'alpha'.setup(require'alpha.themes.dashboard'.config)
+        end
+    }
     use "lukas-reineke/indent-blankline.nvim"
---    use {
- --       'nvim-lualine/lualine.nvim',
-  --      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-   -- }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -57,9 +58,13 @@ return packer.startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use 'numToStr/Comment.nvim'
  
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
+    use {
+        "ray-x/lsp_signature.nvim",
+    }
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
@@ -84,30 +89,8 @@ return packer.startup(function(use)
             'kyazdani42/nvim-web-devicons', -- optional, for file icon
         },
     }
-    use({
-        "catppuccin/nvim",
-        as = "catppuccin"
-    })
-    use({
-        'embark-theme/vim',
-        as = 'embark'
-    })
-    use 'NTBBloodbath/doom-one.nvim'
-    use { "ellisonleao/gruvbox.nvim" }
-
-    use 'martinsione/darkplus.nvim'
-    use 'yashguptaz/calvera-dark.nvim'
-
-    use 'rose-pine/neovim'
-    use 'shaunsingh/nord.nvim'
-    use 'yonlu/omni.vim'
-    use 'shaunsingh/moonlight.nvim'
-
-    use 'marko-cerovac/material.nvim'
     use 'navarasu/onedark.nvim'
-    use "rebelot/kanagawa.nvim"
 
-    use 'Mofiqul/vscode.nvim'
     use 'searleser97/cpbooster.vim'
 
 	if packer_boostrap then

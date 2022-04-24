@@ -1,7 +1,3 @@
-require('lualine').setup({
-    theme = "solarized",section_separators = '', component_separators = '',extensions = {'nvim-tree'}
-})
-
 
 local function name()
     return [[NVIM]]
@@ -10,12 +6,12 @@ end
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = "rose-pine",
+--    theme = "onedark",
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {},
     always_divide_middle = true,
-    globalstatus = false,
+    globalstatus = true,
     extensions = {'nvim-tree'}
   },
 

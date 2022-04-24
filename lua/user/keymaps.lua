@@ -14,7 +14,7 @@ function setkeymap(filetype,mode,binding,task)
 end
 
 --vim.cmd [[ autocmd filetype cpp :lua vim.api.nvim_set_keymap("n","<Leader>cpb",":vsp<CR> :terminal ~/cp/build.sh %:r<CR> :startinsert<CR>",{noremap = true, silent=true})]]
-vim.cmd(setkeymap("cpp","n","<Leader>cpb",":vsp<CR> :terminal ~/cp/build.sh %:r<CR> :startinsert<CR>"))
+vim.cmd(setkeymap("cpp","n","<Leader>cpb",":vsp<CR> :terminal ~/cp/build %:r<CR> :startinsert<CR>"))
 
 vim.cmd(setkeymap("cpp","n","<Leader>cpr",":vsp<CR> :term ./%:r<CR> :startinsert<CR>"))
 
